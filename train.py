@@ -34,9 +34,9 @@ MIN_PROBABILITY = 1E-8  # Minimum probability for maximum likelihood estimation
 MIN_SCALE = 0  # Minimum value for weibull scale
 MIN_SHAPE = 0  # Minimum value for weibull scale
 
-VALIDATION_DATA_PATH = './cache/validation_data.npz'
-MODEL_PATH = './cache/model'
-MODEL_CHECKPOINT_PATH = './cache/model_checkpoint'
+VALIDATION_DATA_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/validation_data.npz')
+MODEL_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/model')
+MODEL_CHECKPOINT_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/model_checkpoint')
 
 
 class end_cb(tf.keras.callbacks.Callback):

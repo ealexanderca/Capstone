@@ -6,7 +6,7 @@ import os
 from data_interface.training_data_interface import TrainingDataInterface
 from util.util import *
 
-CACHE_PATH = "./cache/"
+CACHE_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/')
 
 class TrainingDataCache(TrainingDataInterface):
 
