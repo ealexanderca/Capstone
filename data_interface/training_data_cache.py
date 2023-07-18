@@ -1,6 +1,7 @@
 from time import perf_counter
 
 import numpy as np
+import os
 
 from data_interface.training_data_interface import TrainingDataInterface
 from util.util import *
@@ -27,6 +28,8 @@ class TrainingDataCache(TrainingDataInterface):
 
     def _save_training_data(self):
         print(f"Saving {self.name} cache...")
+        if not os.path.isdir(CACHE_PATH):
+            os.mkdir(CACHE_PATH)
         np.savez(self.path, self._variables, self._labels, self._times)
         print("Done saving.")
 

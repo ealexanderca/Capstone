@@ -15,8 +15,7 @@ CURR_COL = 'CURR'
 VOLT_COL = 'VOLT'
 ANG_VEL_COL = 'ANG_VEL'
 TEMP_DIFF_COL = 'TEMP_DIFF'
-
-RAW_DATA_PATH = os.environ['RAW_DATA_PATH']
+RAW_DATA_PATH = os.path.join(os.path.expanduser('~'),'capstoneData')
 
 def open_lj_dat(folder):
     files = []
