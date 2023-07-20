@@ -154,7 +154,7 @@ def main():
         ax2.legend(loc="upper right")
         plt.xlim(-(data_processor.times[0][-1]-t_avg[start_idx])*1.25, (data_processor.times[0][-1]-t_avg[start_idx])*1.25)
         #plt.show()
-        FIG_PATH = os.path.join(os.path.expanduser('~'),f'capstoneData/cache/frame_{i}.png')
+        FIG_PATH = os.path.join(os.path.expanduser('~'),f'capstoneData/results/frame_{i}.png')
         plt.savefig(FIG_PATH)
         plt.clf()
 

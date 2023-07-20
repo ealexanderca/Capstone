@@ -35,8 +35,8 @@ MIN_SCALE = 0  # Minimum value for weibull scale
 MIN_SHAPE = 0  # Minimum value for weibull scale
 
 VALIDATION_DATA_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/validation_data.npz')
-MODEL_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/model')
-MODEL_CHECKPOINT_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/cache/model_checkpoint')
+MODEL_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/results/model')
+MODEL_CHECKPOINT_PATH = os.path.join(os.path.expanduser('~'),'capstoneData/results/model_checkpoint')
 
 
 class end_cb(tf.keras.callbacks.Callback):
