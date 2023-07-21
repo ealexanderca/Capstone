@@ -33,6 +33,8 @@ ANG_RAW_IDX_COL = "DIO3_EF_READ_A"
 
 class RawDataSQLite(RawDataInterface):
     def __init__(self, file_name, test_num, start=None, end=None):
+        if not os.path.isdir(RAW_DATA_PATH):
+            os.mkdir(RAW_DATA_PATH)
         self.file_path = os.path.join(RAW_DATA_PATH, file_name)
         self.test_num = test_num
         self.start = start
